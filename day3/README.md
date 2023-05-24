@@ -22,3 +22,6 @@
         - Sagettal
         - Coronal
     - To access more information , we include other dimensions
+
+- Radon Transform
+- Simple Backprojection
