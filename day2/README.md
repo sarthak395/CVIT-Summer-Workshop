@@ -48,4 +48,4 @@ Matching the digits on a cheque number with their visual representations
 - Get ROI's using digit level contour matching
 - Matching using cv2.matchTemplate , cv2.minMaxLoc()
     - cv2.matchTemplate - returns an image according to the function given as input
-    - cv2.minMaxLoc - 
+    - cv2.minMaxLoc - finds max area locations
