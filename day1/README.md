@@ -58,3 +58,10 @@ Detecting the barcode from an image which may contain different objects also und
 
 
 ## Barcode Scanning
+There are different methods of it based on different representation of barcode
+1. First of all , in a barcode we have to identify the number of '0s' which symbolise a single black point
+    - Start of a barcode always contains '101' , therefore using that ,we can identify that
+2. Now , with number of 0s representing a bar , we can convert the 'black and white' bars into binarised strings
+3. Now , knowing the rep length (Number of binary digits representing a number ) and total number of numbers , we can extract the binary representation of the required digits because a barcode has ``startnum + '101' + 6 numbers + '101' + 6 numbers``
+4. Now , using the parity of the encoding numbers in the left half if divided by middle '101' , we can get the encoding pattern
+5. Using the encoding pattern , we get the check number
